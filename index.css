@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Creepster&family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/* navigation */
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+/* logo */
+#logo-section{
+    display:flex;
+    align-items: center;
+    margin:15px;
+
+}
+#logo-img{
+    margin-right:1rem;
+}
+#logo-name{
+    color:white;
+    font-size: x-large;
+    font-family: 'Allison', cursive;
+    font-family: 'Creepster', cursive;
+}
+/* navigation-list */
+ul#navigation-menu{
+    display:flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+   
+}
+ul#navigation-menu li a{
+    padding:1rem 3rem;
+    font-size: x-large;
+    text-decoration: none;
+    color:white;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: font-size 0.5s;
+
+}
+ul#navigation-menu li a:hover{
+    font-size:30px;
+ 
+}
+
+/* background image */
+header{
+    height:150vh;
+    width: 100%;
+    
+}
+header::before{
+    content:"";
+    position:absolute;
+    background:url(https://thumbs.dreamstime.com/b/set-hamburger-beer-french-fries-standard-drinks-food-pub-snacks-dark-background-fast-traditional-american-high-220911511.jpg) no-repeat center center/cover;
+    width:100%;
+    height: 150vh;
+    z-index: -1;
+    
+}
+#tagline{
+    display:flex;
+    flex-direction: column;
+    color:rgb(219, 193, 248);
+    font-size: xx-large;
+    margin:10rem 0rem 0rem 4rem;
+    line-height: 3rem;
+    word-spacing: 5px;
+    font-family: 'Merienda', cursive;
+    
+    
+
+}
+@media (max-width:700px){
+    #tagline{
+        font-size: medium;
+        margin-top: 2rem;
+
+    }
+    
+}
+.tagline-p{
+    transition:font-size 0.5s ;
+    transition:padding-top 0.5s ;
+    transition:padding-bottom 0.5s ;
+}
+.tagline-p:hover{
+    font-size: 45px;
+    padding-top:2rem;
+    padding-bottom:1rem;
+}
+#order-now-btn{
+   width:9rem;
+   height:auto;  
+    margin:2rem 0 0 3rem;
+    padding:0.5rem 1rem 0.5rem 1rem;
+    text-align:center;
+    font-size: 20px;
+    background-color: transparent;
+    border-radius:25%;
+    color:white;
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+
+}
+#order-now-btn:hover{
+    background-color: rgb(247, 219, 59);
+    opacity: 0.6;
+    color:black;
+}
+
+/* kitchen section */
+ h2{
+    text-align: center;
+    padding-top:3rem;
+    padding-bottom:4rem;
+}
+#kitchen{
+    background-image: radial-gradient(circle, #8005ac, #67077e, #4c0b55, #300c31, #140112);
+    color:white;
+    padding-bottom:4rem;
+}
+.containr{
+    overflow-x:auto ;
+    align-items: center;
+    margin:0;
+    width:100%;
+    padding-top:4rem;
+    padding-bottom: 4rem;
+    
+}
+.containr::-webkit-scrollbar{
+    display: none;
+}
+.pricebutton{
+    display:block;
+    margin:auto;
+    width:5rem;
+}
+.card{
+    background-color: rgb(39, 39, 39);
+    border-radius:1rem;
+    margin-right: 20px;
+    margin-left:20px;
+    width:18rem;
+    min-width: 18rem;
+    transition:1s;
+    
+}
+.card:hover{
+    transform: scale(1.2);
+    z-index: 2;
+    margin-left:30px;
+    margin-right:30px;
+    box-shadow: 20px 11px 37px -8px rgba(0,0,0,0.62);
+-webkit-box-shadow: 20px 11px 37px -8px rgba(0,0,0,0.62);
+-moz-box-shadow: 20px 11px 37px -8px rgba(0,0,0,0.62);
+    
+}
+.card-image{
+    border-radius:1rem;
+}
+/* delivery section */
+
+#service-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+    flex-wrap: wrap;
+    
+}
+#services{
+    
+background: rgb(250,243,246);
+background: linear-gradient(90deg, rgba(250,243,246,1) 0%, rgba(171,221,248,1) 43%);
+padding-bottom: 5rem;
+}
+#delivery-img{
+    width:auto;
+    height: 100%;
+}
+#delivery-button{
+    font-size: xx-large;
+    font-family: 'Merienda', cursive;
+    width:24rem;
+    border-radius: 24%;
+    background-image: linear-gradient(to right, #16A085 0%, #F4D03F  51%, #16A085  100%);
+       
+}
+
+/* about us page */
+#organization-title{
+    font-family: 'Allison', cursive;
+    font-family: 'Creepster', cursive;
+}
+#abouttext{
+    width:50%;
+    display:block;
+    margin:auto;
+
+}
+#about{
+    padding-bottom: 5rem;
+}
+/* footer */
+#social-handle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer-section{
+    background-color: rgba(4, 0, 44, 0.918);
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+.fa{
+    width:30px;
+    font-size: 30px;
+    margin:15px;
+    text-align: center;
+    text-decoration: none;
+   
+    color:white;
+    font-weight: 400;
+
+}
+.fa-facebook{
+    color:rgba(4, 0, 44, 0.918);
+    background-color: white;
+    border-radius: 6px;
+    padding-top: 5px;
+   
+    
+}
+#copyrightline{
+    color:white;
+    font-size: medium;
+    margin-left:2rem;
+}
